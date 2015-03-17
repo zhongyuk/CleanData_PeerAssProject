@@ -1,4 +1,6 @@
 # CleanData_PeerAssProject
+
+### This is a peer assessment project repo for Coursera online couse - Getting and Cleaning Data
 The run_analysis.R script uses a machine learning dataset collected from the accelerometers from the Samsung Galaxy S smartphone,
 to form a lower dimensional (less variables) tidy dataset - HAR_mean.txt
 
@@ -7,8 +9,8 @@ and gives a lower dimension (less variables) dataset as output.
 More details about the input dataset can be found at:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
-run_analysis.R can be executed successfully under R/Rstudio's default work directory after launching (C:/users/username). 
-If the work directory is different than the default work directory, it can either change to the defualt directory through setwd("C:users/username"),
+run_analysis.R can be executed successfully under R/Rstudio's default work directory after launching (C:/users/username/Documents). 
+If the work directory is different than the default work directory, it can either change to the defualt directory through setwd("C:users/username/Documents"),
 or comment out the setwd("..") line, to execute the script under any desired work directory
 
 The run_analysis.R script's functionality is stated as following:
