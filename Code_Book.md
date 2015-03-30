@@ -5,7 +5,7 @@ CODE BOOK
 HAR_mean.txt stores both the mean and standard deviation of variables derived from measurements retreived from accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ.
 
 * A quick summary of steps taken to produce HAR_mean dataset
-Step 1
+* Step 1
 A brief of retreiving time domain variables(the variables with a prefix 't') is explained as following:
 These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -13,7 +13,7 @@ A brief of retreiving frequency doman variables(the variables with a prefix 'f')
 Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
 Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag.
 
-Step 2
+* Step 2
 Estimate a set of variables from the signals retrieved from Step 1 
 
 mean(): Mean value
@@ -42,13 +42,13 @@ tBodyAccJerkMean
 tBodyGyroMean
 tBodyGyroJerkMean
 
-Step 3
+* Step 3
 Selecting only the mean and standard deviation estimates out of all the variable pool obtained from Step 2.
 The reason of selecting mean and standard deviation estimates are explained as following:
 1) Mean and standard deviation are good estimates for the whole signal population, and have many advantages in further statistical inference
 2) By only selecting mean and standard deviation estimates, the dataset gets smaller and simplified, reduces potential computational costs.
 
-Step 4
+* Step 4
 Compute the average of each variable for each subject and each activity.
 This step of averaging further reduces the dimension of the dataset, meanwhile provides more insights in terms of studying each subject's activity pattern.
 
@@ -67,7 +67,7 @@ This step of averaging further reduces the dimension of the dataset, meanwhile p
  std        : standard deviation estimated from the signal (Step 2)
  XYZ        : denotes for a particular components in Cartesian Coordinates
  
- ===========================================================================
+ ==========================================================================================================================
  [1] subjectID
  [2] activity                      
  [3] tBodyAcc_mean_X
